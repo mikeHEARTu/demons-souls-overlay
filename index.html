@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for twitch.tv/aznmike">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="mikeheartu">
+	<title>aznmike</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+
+<script>
+	var slideIndex = 0;
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("textContainer");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex = 1}
+	x[slideIndex-1].style.display = "inline-block";
+	setTimeout(carousel, 15000); // Change image every 15 seconds
+	}
+</script>
+
+<body onload="carousel()">
+	<div class="testBG">
+		<div class="textContainer">
+			<i class="fab fa-twitter textIcon"></i><span class="textUsername">asrikins</span>
+		</div>
+
+		<div class="textContainer">
+			<i class="fab fa-instagram textIcon"></i><span class="textUsername">asrikins</span>
+		</div>
+
+		<div class="textContainer">
+			<i class="fas fa-thumbs-up textIcon"></i><span class="textUsername">It can say anything down here!</span>
+		</div>
+	</div>
+</body>
+
+</html>
