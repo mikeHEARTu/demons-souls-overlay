@@ -62,8 +62,8 @@ body
 }
 #obsSettings
 {
-	padding-top: 50vh;
-	margin-top: -50vh;
+	padding-top: 25vh;
+	margin-top: -25vh;
 }
 
 @media (max-width:1314px)
