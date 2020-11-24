@@ -36,6 +36,20 @@ body
 	text-transform: uppercase;
 	text-shadow: 0 0.5vh 0.2vw black;
 }
+.testInfo a
+{
+	color:#ccc;
+	transition: 0.2s;
+	text-decoration: none;
+}
+.testInfo a:hover
+{
+	color:#3498db;
+}
+.testInfo a:active
+{
+	color:#3498db;
+}
 .textContainer
 {
 	position: absolute;

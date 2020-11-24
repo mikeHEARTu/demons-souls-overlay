@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	background: #ecf0f1;
+	color: #2c3e50;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 36px;
+}
+.textContainer
+{
+	width: 1274px;
+	height: auto;
+	/* background: red; */
+	margin: 0 auto;
+}
+.textTitle
+{
+	font-weight: 900;
+	text-align: center;
+	font-size: 4em;
+}
+.textSection
+{
+	margin-bottom: 5vh;
+	animation: fadeIn 1s 0s ease-out backwards;
+	animation-delay: calc(var(--animation-order) * 100ms);
+}
+.textSection a:link
+{
+	color: #2c3e50;
+}
+.textSection a:visited
+{
+	color: #2c3e50;
+}
+.textSection a:hover
+{
+	color: #2980b9;
+}
+.textSection a:active
+{
+	color: #8e44ad;
+}
+.textSection a
+{
+	transition: 0.2s;
+}
+.textImage
+{
+	width: 950px;
+	height: auto;
+	display: block;
+	margin: 0 auto 5vh;
+	border-radius: 1em;
+	box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.5);
+}
+#obsSettings
+{
+	padding-top: 50vh;
+	margin-top: -50vh;
+}
+
+@media (max-width:1314px)
+{
+	body
+	{
+		font-size: 28px;
+	}
+	.textContainer
+	{
+		width: 950px;
+	}
+	.textImage
+	{
+		width: 626px;
+	}
+}
+
+@media (max-width:990px)
+{
+	body
+	{
+		font-size: 3vw;
+	}
+	.textContainer
+	{
+		width: 90%;
+	}
+	.textSection
+	{
+		margin-bottom: 3vh;
+	}
+	.textImage
+	{
+		width: 66%;
+		margin: 0 auto 3vh;
+		box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.5);
+	}
+}
+
+@keyframes fadeIn
+{
+    from
+	{
+		filter:opacity(0);
+		transform: translateY(-5vh);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
